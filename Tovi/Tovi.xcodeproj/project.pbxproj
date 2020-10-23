@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08121E15170EC7AE00F2F602 /* ToviAboutWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08121E13170EC7AE00F2F602 /* ToviAboutWindowController.m */; };
+		08121E16170EC7AE00F2F602 /* AboutWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08121E14170EC7AE00F2F602 /* AboutWindow.xib */; };
+		08121E32170F376500F2F602 /* ToviIcon.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 08121E31170F376500F2F602 /* ToviIcon.iconset */; };
+		085225DA16FF62A5003EF7B8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 085225D916FF62A5003EF7B8 /* Cocoa.framework */; };
+		085225E416FF62A5003EF7B8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 085225E216FF62A5003EF7B8 /* InfoPlist.strings */; };
+		085225E616FF62A5003EF7B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 085225E516FF62A5003EF7B8 /* main.m */; };
+		085225EA16FF62A5003EF7B8 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 085225E816FF62A5003EF7B8 /* Credits.rtf */; };
+		085225ED16FF62A6003EF7B8 /* ToviAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 085225EC16FF62A6003EF7B8 /* ToviAppDelegate.m */; };
+		085225F016FF62A6003EF7B8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 085225EE16FF62A6003EF7B8 /* MainMenu.xib */; };
+		085225F716FF62B7003EF7B8 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 085225F616FF62B7003EF7B8 /* WebKit.framework */; };
+		085225FA16FF6425003EF7B8 /* ToviWebDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 085225F916FF6425003EF7B8 /* ToviWebDelegate.m */; };
+		0852260017000788003EF7B8 /* ToviWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 085225FE17000788003EF7B8 /* ToviWindowController.m */; };
+		0852260117000788003EF7B8 /* ToviWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 085225FF17000788003EF7B8 /* ToviWindow.xib */; };
+		0855BB5E171A841900DB0DF0 /* JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0855BB5D171A841900DB0DF0 /* JSON.m */; };
+		0855BB61171A8AC800DB0DF0 /* HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 0855BB60171A8AC800DB0DF0 /* HTML.m */; };
+		0855BB65171A9C8500DB0DF0 /* ToviPreferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0855BB63171A9C8500DB0DF0 /* ToviPreferenceController.m */; };
+		0855BB66171A9C8500DB0DF0 /* PreferenceWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0855BB64171A9C8500DB0DF0 /* PreferenceWindow.xib */; };
+		086DDE711707499C0045BD9E /* ToviWebExternal.m in Sources */ = {isa = PBXBuildFile; fileRef = 086DDE701707499C0045BD9E /* ToviWebExternal.m */; };
+		086DDE751708181C0045BD9E /* ToviWebProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 086DDE741708181C0045BD9E /* ToviWebProxy.m */; };
+		086DDE7A170824340045BD9E /* ToviWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 086DDE79170824340045BD9E /* ToviWebView.m */; };
+		088DC50F17223E1C00532D45 /* tovi-js in Resources */ = {isa = PBXBuildFile; fileRef = 088DC50E17223E1C00532D45 /* tovi-js */; };
+		088DC5131722A1A300532D45 /* ToviPermissionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 088DC5121722A1A300532D45 /* ToviPermissionManager.m */; };
+		088DC5151722C51A00532D45 /* PermissionHelp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 088DC5141722C51A00532D45 /* PermissionHelp.xib */; };
+		08A909E81700A1F9004816CB /* Array.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A909E71700A1F9004816CB /* Array.m */; };
+		08A909EB1700A21C004816CB /* File.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A909EA1700A21C004816CB /* File.m */; };
+		08A909F41700A2DD004816CB /* Date.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A909F31700A2DD004816CB /* Date.m */; };
+		08A909F71700A2EC004816CB /* Regex.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A909F61700A2EC004816CB /* Regex.m */; };
+		08A909FA1700A2FB004816CB /* Map.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A909F91700A2FB004816CB /* Map.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		08121E12170EC7AE00F2F602 /* ToviAboutWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToviAboutWindowController.h; sourceTree = SOURCE_ROOT; };
+		08121E13170EC7AE00F2F602 /* ToviAboutWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToviAboutWindowController.m; sourceTree = SOURCE_ROOT; };
+		08121E14170EC7AE00F2F602 /* AboutWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutWindow.xib; sourceTree = "<group>"; };
+		08121E31170F376500F2F602 /* ToviIcon.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = ToviIcon.iconset; sourceTree = "<group>"; };
+		085225D616FF62A5003EF7B8 /* Tovi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tovi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		085225D916FF62A5003EF7B8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		085225DC16FF62A5003EF7B8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		085225DD16FF62A5003EF7B8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		085225DE16FF62A5003EF7B8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		085225E116FF62A5003EF7B8 /* Tovi-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tovi-Info.plist"; sourceTree = "<group>"; };
+		085225E316FF62A5003EF7B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		085225E516FF62A5003EF7B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		085225E716FF62A5003EF7B8 /* Tovi-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tovi-Prefix.pch"; sourceTree = "<group>"; };
+		085225E916FF62A5003EF7B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		085225EB16FF62A5003EF7B8 /* ToviAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToviAppDelegate.h; sourceTree = "<group>"; };
+		085225EC16FF62A6003EF7B8 /* ToviAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToviAppDelegate.m; sourceTree = "<group>"; };
+		085225EF16FF62A6003EF7B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		085225F616FF62B7003EF7B8 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		085225F816FF6425003EF7B8 /* ToviWebDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToviWebDelegate.h; sourceTree = "<group>"; };
+		085225F916FF6425003EF7B8 /* ToviWebDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToviWebDelegate.m; sourceTree = "<group>"; };
+		085225FD17000788003EF7B8 /* ToviWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToviWindowController.h; sourceTree = "<group>"; };
+		085225FE17000788003EF7B8 /* ToviWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToviWindowController.m; sourceTree = "<group>"; };
+		085225FF17000788003EF7B8 /* ToviWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ToviWindow.xib; path = Tovi/ToviWindow.xib; sourceTree = "<group>"; };
+		0855BB5B1711BE9900DB0DF0 /* Tovi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Tovi.entitlements; sourceTree = "<group>"; };
+		0855BB5C171A841900DB0DF0 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSON.h; path = ../soc/JSON.h; sourceTree = "<group>"; };
+		0855BB5D171A841900DB0DF0 /* JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSON.m; path = ../soc/JSON.m; sourceTree = "<group>"; };
+		0855BB5F171A8AC800DB0DF0 /* HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTML.h; path = ../soc/HTML.h; sourceTree = "<group>"; };
+		0855BB60171A8AC800DB0DF0 /* HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTML.m; path = ../soc/HTML.m; sourceTree = "<group>"; };
+		0855BB62171A9C8500DB0DF0 /* ToviPreferenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToviPreferenceController.h; sourceTree = "<group>"; };
+		0855BB63171A9C8500DB0DF0 /* ToviPreferenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToviPreferenceController.m; sourceTree = "<group>"; };
+		0855BB64171A9C8500DB0DF0 /* PreferenceWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PreferenceWindow.xib; path = Tovi/PreferenceWindow.xib; sourceTree = "<group>"; };
+		086DDE6F1707499C0045BD9E /* ToviWebExternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToviWebExternal.h; sourceTree = "<group>"; };
+		086DDE701707499C0045BD9E /* ToviWebExternal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToviWebExternal.m; sourceTree = "<group>"; };
+		086DDE731708181C0045BD9E /* ToviWebProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToviWebProxy.h; sourceTree = "<group>"; };
+		086DDE741708181C0045BD9E /* ToviWebProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToviWebProxy.m; sourceTree = "<group>"; };
+		086DDE78170824340045BD9E /* ToviWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToviWebView.h; sourceTree = SOURCE_ROOT; };
+		086DDE79170824340045BD9E /* ToviWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToviWebView.m; sourceTree = SOURCE_ROOT; };
+		088DC50D17223B4F00532D45 /* tovi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tovi.h; sourceTree = "<group>"; };
+		088DC50E17223E1C00532D45 /* tovi-js */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "tovi-js"; sourceTree = "<group>"; };
+		088DC5111722A1A300532D45 /* ToviPermissionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToviPermissionManager.h; sourceTree = "<group>"; };
+		088DC5121722A1A300532D45 /* ToviPermissionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToviPermissionManager.m; sourceTree = "<group>"; };
+		088DC5141722C51A00532D45 /* PermissionHelp.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PermissionHelp.xib; sourceTree = "<group>"; };
+		08A909E61700A1F9004816CB /* Array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Array.h; path = ../../Works/soc/Array.h; sourceTree = "<group>"; };
+		08A909E71700A1F9004816CB /* Array.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Array.m; path = ../../Works/soc/Array.m; sourceTree = "<group>"; };
+		08A909E91700A21C004816CB /* File.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = File.h; path = ../../Works/soc/File.h; sourceTree = "<group>"; };
+		08A909EA1700A21C004816CB /* File.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = File.m; path = ../../Works/soc/File.m; sourceTree = "<group>"; };
+		08A909F21700A2DD004816CB /* Date.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Date.h; path = ../../Works/soc/Date.h; sourceTree = "<group>"; };
+		08A909F31700A2DD004816CB /* Date.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Date.m; path = ../../Works/soc/Date.m; sourceTree = "<group>"; };
+		08A909F51700A2EC004816CB /* Regex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Regex.h; path = ../../Works/soc/Regex.h; sourceTree = "<group>"; };
+		08A909F61700A2EC004816CB /* Regex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Regex.m; path = ../../Works/soc/Regex.m; sourceTree = "<group>"; };
+		08A909F81700A2FB004816CB /* Map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Map.h; path = ../../Works/soc/Map.h; sourceTree = "<group>"; };
+		08A909F91700A2FB004816CB /* Map.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Map.m; path = ../../Works/soc/Map.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		085225D316FF62A5003EF7B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				085225F716FF62B7003EF7B8 /* WebKit.framework in Frameworks */,
+				085225DA16FF62A5003EF7B8 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		085225CD16FF62A5003EF7B8 = {
+			isa = PBXGroup;
+			children = (
+				085225DF16FF62A5003EF7B8 /* Tovi */,
+				08A9097717009637004816CB /* nibs */,
+				08A909E51700A1E7004816CB /* soc */,
+				086DDE72170751340045BD9E /* Resources */,
+				085225D816FF62A5003EF7B8 /* Frameworks */,
+				085225E016FF62A5003EF7B8 /* Supporting Files */,
+				085225D716FF62A5003EF7B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		085225D716FF62A5003EF7B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				085225D616FF62A5003EF7B8 /* Tovi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		085225D816FF62A5003EF7B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				085225F616FF62B7003EF7B8 /* WebKit.framework */,
+				085225D916FF62A5003EF7B8 /* Cocoa.framework */,
+				085225DB16FF62A5003EF7B8 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		085225DB16FF62A5003EF7B8 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				085225DC16FF62A5003EF7B8 /* AppKit.framework */,
+				085225DD16FF62A5003EF7B8 /* CoreData.framework */,
+				085225DE16FF62A5003EF7B8 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		085225DF16FF62A5003EF7B8 /* Tovi */ = {
+			isa = PBXGroup;
+			children = (
+				088DC50D17223B4F00532D45 /* tovi.h */,
+				085225EB16FF62A5003EF7B8 /* ToviAppDelegate.h */,
+				085225EC16FF62A6003EF7B8 /* ToviAppDelegate.m */,
+				085225FD17000788003EF7B8 /* ToviWindowController.h */,
+				085225FE17000788003EF7B8 /* ToviWindowController.m */,
+				085225F816FF6425003EF7B8 /* ToviWebDelegate.h */,
+				085225F916FF6425003EF7B8 /* ToviWebDelegate.m */,
+				086DDE6F1707499C0045BD9E /* ToviWebExternal.h */,
+				086DDE701707499C0045BD9E /* ToviWebExternal.m */,
+				086DDE731708181C0045BD9E /* ToviWebProxy.h */,
+				086DDE741708181C0045BD9E /* ToviWebProxy.m */,
+				086DDE78170824340045BD9E /* ToviWebView.h */,
+				086DDE79170824340045BD9E /* ToviWebView.m */,
+				08121E12170EC7AE00F2F602 /* ToviAboutWindowController.h */,
+				08121E13170EC7AE00F2F602 /* ToviAboutWindowController.m */,
+				0855BB62171A9C8500DB0DF0 /* ToviPreferenceController.h */,
+				0855BB63171A9C8500DB0DF0 /* ToviPreferenceController.m */,
+				088DC5111722A1A300532D45 /* ToviPermissionManager.h */,
+				088DC5121722A1A300532D45 /* ToviPermissionManager.m */,
+			);
+			path = Tovi;
+			sourceTree = "<group>";
+		};
+		085225E016FF62A5003EF7B8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0855BB5B1711BE9900DB0DF0 /* Tovi.entitlements */,
+				085225E116FF62A5003EF7B8 /* Tovi-Info.plist */,
+				085225E216FF62A5003EF7B8 /* InfoPlist.strings */,
+				085225E516FF62A5003EF7B8 /* main.m */,
+				085225E716FF62A5003EF7B8 /* Tovi-Prefix.pch */,
+				085225E816FF62A5003EF7B8 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			path = Tovi;
+			sourceTree = "<group>";
+		};
+		086DDE72170751340045BD9E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				088DC50E17223E1C00532D45 /* tovi-js */,
+				08121E31170F376500F2F602 /* ToviIcon.iconset */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08A9097717009637004816CB /* nibs */ = {
+			isa = PBXGroup;
+			children = (
+				085225EE16FF62A6003EF7B8 /* MainMenu.xib */,
+				085225FF17000788003EF7B8 /* ToviWindow.xib */,
+				08121E14170EC7AE00F2F602 /* AboutWindow.xib */,
+				0855BB64171A9C8500DB0DF0 /* PreferenceWindow.xib */,
+				088DC5141722C51A00532D45 /* PermissionHelp.xib */,
+			);
+			name = nibs;
+			sourceTree = "<group>";
+		};
+		08A909E51700A1E7004816CB /* soc */ = {
+			isa = PBXGroup;
+			children = (
+				08A909E61700A1F9004816CB /* Array.h */,
+				08A909E71700A1F9004816CB /* Array.m */,
+				08A909E91700A21C004816CB /* File.h */,
+				08A909EA1700A21C004816CB /* File.m */,
+				08A909F21700A2DD004816CB /* Date.h */,
+				08A909F31700A2DD004816CB /* Date.m */,
+				08A909F51700A2EC004816CB /* Regex.h */,
+				08A909F61700A2EC004816CB /* Regex.m */,
+				08A909F81700A2FB004816CB /* Map.h */,
+				08A909F91700A2FB004816CB /* Map.m */,
+				0855BB5C171A841900DB0DF0 /* JSON.h */,
+				0855BB5D171A841900DB0DF0 /* JSON.m */,
+				0855BB5F171A8AC800DB0DF0 /* HTML.h */,
+				0855BB60171A8AC800DB0DF0 /* HTML.m */,
+			);
+			name = soc;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		085225D516FF62A5003EF7B8 /* Tovi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 085225F316FF62A6003EF7B8 /* Build configuration list for PBXNativeTarget "Tovi" */;
+			buildPhases = (
+				085225D216FF62A5003EF7B8 /* Sources */,
+				085225D316FF62A5003EF7B8 /* Frameworks */,
+				085225D416FF62A5003EF7B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tovi;
+			productName = Tovi;
+			productReference = 085225D616FF62A5003EF7B8 /* Tovi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		085225CE16FF62A5003EF7B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Tovi;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = udpwork.com;
+			};
+			buildConfigurationList = 085225D116FF62A5003EF7B8 /* Build configuration list for PBXProject "Tovi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 085225CD16FF62A5003EF7B8;
+			productRefGroup = 085225D716FF62A5003EF7B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				085225D516FF62A5003EF7B8 /* Tovi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		085225D416FF62A5003EF7B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				085225E416FF62A5003EF7B8 /* InfoPlist.strings in Resources */,
+				085225EA16FF62A5003EF7B8 /* Credits.rtf in Resources */,
+				085225F016FF62A6003EF7B8 /* MainMenu.xib in Resources */,
+				0852260117000788003EF7B8 /* ToviWindow.xib in Resources */,
+				08121E16170EC7AE00F2F602 /* AboutWindow.xib in Resources */,
+				08121E32170F376500F2F602 /* ToviIcon.iconset in Resources */,
+				0855BB66171A9C8500DB0DF0 /* PreferenceWindow.xib in Resources */,
+				088DC50F17223E1C00532D45 /* tovi-js in Resources */,
+				088DC5151722C51A00532D45 /* PermissionHelp.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		085225D216FF62A5003EF7B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				085225E616FF62A5003EF7B8 /* main.m in Sources */,
+				085225ED16FF62A6003EF7B8 /* ToviAppDelegate.m in Sources */,
+				085225FA16FF6425003EF7B8 /* ToviWebDelegate.m in Sources */,
+				0852260017000788003EF7B8 /* ToviWindowController.m in Sources */,
+				08A909E81700A1F9004816CB /* Array.m in Sources */,
+				08A909EB1700A21C004816CB /* File.m in Sources */,
+				08A909F41700A2DD004816CB /* Date.m in Sources */,
+				08A909F71700A2EC004816CB /* Regex.m in Sources */,
+				08A909FA1700A2FB004816CB /* Map.m in Sources */,
+				086DDE711707499C0045BD9E /* ToviWebExternal.m in Sources */,
+				086DDE751708181C0045BD9E /* ToviWebProxy.m in Sources */,
+				086DDE7A170824340045BD9E /* ToviWebView.m in Sources */,
+				08121E15170EC7AE00F2F602 /* ToviAboutWindowController.m in Sources */,
+				0855BB5E171A841900DB0DF0 /* JSON.m in Sources */,
+				0855BB61171A8AC800DB0DF0 /* HTML.m in Sources */,
+				0855BB65171A9C8500DB0DF0 /* ToviPreferenceController.m in Sources */,
+				088DC5131722A1A300532D45 /* ToviPermissionManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		085225E216FF62A5003EF7B8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				085225E316FF62A5003EF7B8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		085225E816FF62A5003EF7B8 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				085225E916FF62A5003EF7B8 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		085225EE16FF62A6003EF7B8 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				085225EF16FF62A6003EF7B8 /* en */,
+			);
+			name = MainMenu.xib;
+			path = Tovi;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		085225F116FF62A6003EF7B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer: wu idea (BT6NQKQPWG)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /Users/wuzuyang/Works/soc;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		085225F216FF62A6003EF7B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer: wu idea (BT6NQKQPWG)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /Users/wuzuyang/Works/soc;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		085225F416FF62A6003EF7B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = Tovi/Tovi.entitlements;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tovi/Tovi-Prefix.pch";
+				INFOPLIST_FILE = "Tovi/Tovi-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				USER_HEADER_SEARCH_PATHS = /Users/wuzuyang/Works/soc;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		085225F516FF62A6003EF7B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = Tovi/Tovi.entitlements;
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tovi/Tovi-Prefix.pch";
+				INFOPLIST_FILE = "Tovi/Tovi-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				USER_HEADER_SEARCH_PATHS = /Users/wuzuyang/Works/soc;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		085225D116FF62A5003EF7B8 /* Build configuration list for PBXProject "Tovi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				085225F116FF62A6003EF7B8 /* Debug */,
+				085225F216FF62A6003EF7B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		085225F316FF62A6003EF7B8 /* Build configuration list for PBXNativeTarget "Tovi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				085225F416FF62A6003EF7B8 /* Debug */,
+				085225F516FF62A6003EF7B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 085225CE16FF62A5003EF7B8 /* Project object */;
+}
