@@ -1,0 +1,14 @@
+#player{
+	color: #777;
+	background: #ddd url(bg.png) no-repeat;
+	/*
+	background: #eee;
+	*/
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#player a{
+	color: #99f;
+}

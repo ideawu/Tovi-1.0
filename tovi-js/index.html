@@ -1,0 +1,235 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Tovi - The JavaScript image gallery and HTML slider, with iPhone swipe effect</title>
+	<meta name="Description" content="Tovi is a JavaScript image gallery and HTML slider, with iPhone swipe effect, jQuery plugin. Images can be scaled." />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="swipe.js"></script>
+	<script type="text/javascript" src="tovi.js"></script>
+	
+	<style type="text/css">
+	body{
+		margin: 0;
+		padding: 0;
+		color: #ccc;
+		font-size: 13px;
+		font-family: arial;
+		background: #333;
+		text-align: center;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+	a{
+		cursor: pointer;
+		color: #ff3;
+		text-decoration: none;
+	}
+	a img{
+		text-decoration: none;
+	}
+	h1{
+		font-size: 150%;
+	}
+	#player{
+		visibility: hidden;
+		overflow: hidden;
+		color: #444;
+		margin: 10px auto;
+		width: 450px;
+		height: 300px;
+		background: #fff;
+	}
+	#player p{
+		margin: 6px 0;
+		padding: 0;
+	}
+	table{
+		border-collapse: collapse;
+	}
+	#instruction{
+		width: 400px;
+		text-align: left;
+		background: 
+	}
+	#instruction table td{
+		padding: 4px;
+	}
+	#instruction h3{
+		margin-left: 0px;
+	}
+	#instruction label{
+		margin-left: 0px;
+		padding-left: 0px;
+		padding-right: 20px;
+		float: left;
+		width: 180px;
+		text-align: right;
+	}
+	#nav{
+		overflow: hidden;
+		margin: 0;
+		padding: 4px 0;
+		background: #333;
+	}
+	#nav .btn{
+		cursor: pointer;
+		width: 22px;
+		height: 22px;
+		margin: 0 3px;
+		float: left;
+		overflow: hidden;
+		background-repeat: no-repeat;
+		background-position: 2px 2px;
+	}
+	#nav .btn_hover{
+		background-color: #555;
+	}
+	#nav_page{
+		cursor: default;
+		float: left;
+		margin: 2px 10px 0 10px;
+		padding: 0;
+		font-size: 16px;
+		height: 22px;
+		color: #ff3;
+		text-align: center;
+		vertical-align: middle;
+	}
+	#nav_buttons{
+		margin: 0 auto;
+	}
+	</style>
+	<link id="theme_link" href="themes/default/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<h1>Tovi Image Gallery and Slideshow</h1>
+
+<div id="player" style="display: auto;">
+	<div>
+		<div style="">
+			<h1 style="margin: 0 0 25px 0;">Instruction</h1>
+			<p>Use mouse to drag left or right, or use trackpad to swipe.</p>
+			<p>Use scroll wheel to scale images.</p>
+			<p>Use arrow keys to paginate.</p>
+			<p style="margin-top: 00px; font-size: 80%">
+				@ideawu
+				<br/>
+				<a href="http://tovi.ideawu.com/">http://tovi.ideawu.com/</a>
+			</p>
+		</div>
+	</div>
+	<img src="http://images.apple.com/mac/home/images/promo_lead_macbookpro.jpg" />
+	<img src="http://www.ideawu.net/blog/wp-content/themes/ideablog-2.0/logofish.gif" />
+	<img src="http://www.ideawu.net/image/udpwork.com.gif" />
+	<div>
+		<h1 style="margin-top: 0px; padding: 0">Thanks!</h1>
+		<img src="images/icon_32x32@2x.png" height="64" />
+	</div>
+</div>
+
+<div id="nav">
+	<a href="javascript: tovi.prev();">&lt;&lt;</a>
+	&nbsp;
+	<span id="page"></span>
+	&nbsp;
+	<a href="javascript: tovi.next();">&gt;&gt;</a>
+	<p><label><input type="checkbox" name="autoplay" />Auto Play</label></p>
+</div>
+
+<div>
+	<textarea style="width:450px;height:100px" name="text">http://images.apple.com/iphone/design/images/hero_front.jpg</textarea>
+	<p>
+	<button id="add">Insert HTML or image Link into slider</button>
+	</p>
+</div>
+
+
+<script type="text/javascript">
+var tovi;
+$(function(){
+	$('#nav').children().each(function(i, e){
+		//alert(e.outerHTML);
+	});
+	$(document).ready(function(){
+		$('*').on('selectstart', function(e){e.preventDefault();});
+
+		tovi = new ToviViewer();
+		tovi.onchange = function(index, cell){
+			//alert(index);
+			$('#page').html((index + 1) + '/' + tovi.cells.length);
+		}
+		tovi.init($('#player'));
+		
+		$('#add').click(function(){
+			var str = $('textarea[name=text]').val();
+			if(str.match(/^https?:\/\//)){
+				str = '<img src="' + str + '" />';
+			}else{
+				str = '<div>' + str + '</div>';
+			}
+			tovi.insert(0, str);
+			tovi.seek(-1);
+		});
+		
+		$('input[name=autoplay]').change(function(){
+			if(this.checked){
+				tovi.autoplay();
+			}else{
+				tovi.stopAutoplay();
+			}
+		});
+		
+		$(document).bind('keydown', keyboard_handler);
+	});
+});
+
+function keyboard_handler(e){
+	switch(String.fromCharCode(e.which)){
+		//case 'A':
+		case '%': // left
+			tovi.prev();
+			e.preventDefault();
+			break;
+		//case 'D':
+		case ' ':
+		case '\'': // right
+			tovi.next();
+			e.preventDefault();
+			break;
+		//case 'W':
+		case '&': //up
+			tovi.scale(0.08);
+			e.preventDefault();
+			break;
+		//case 'S':
+		case '(': //down
+			tovi.scale(-0.08);
+			e.preventDefault();
+			break;
+	}
+}
+</script>
+
+
+<div style="font-size: 12px; margin-top: 50px; text-align: center;">
+Copyright &copy; 2013 <a href="http://www.ideawu.com/">ideawu.com</a>. All rights reserved.
+<div style="display: none;">
+<script type="text/javascript">
+<!--
+document.write(unescape("| %3Cscript src='http://js.users.51.la/414722.js' type='text/javascript'%3E%3C/script%3E"));
+//-->
+</script>
+</div>
+</div>
+
+</body>
+</html>
+
+
